@@ -59,8 +59,8 @@ let table_of_contents = [
         ],
         reference: [
             {
-                title: "This is a reference paper",
-                link: "https://yahoo.com"
+                title: 'This is a reference paper',
+                link: 'https://www.youtube.com/watch?v=pVZSQpH9g0I&list=PLqGkIjcOyrGnu-v7IKyDd64Y-gd0gNlqK&index=2&t=3s'
             }
         ]
     }, 
@@ -108,7 +108,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper',
-                link: 'This is my link'
+                link: 'https://www.youtube.com/watch?v=1iNJ9Dak5Q8&list=PLqGkIjcOyrGnu-v7IKyDd64Y-gd0gNlqK&index=3&t=4s'
             }
         ]
     },
@@ -175,7 +175,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: 'This is my link'
+                link: 'https://www.youtube.com/playlist?list=PLqGkIjcOyrGkp2Ga05IxnbQqeVi2aLcdW'
             }
         ]
     },
@@ -247,6 +247,10 @@ let table_of_contents = [
             }
         ], 
         reference: [
+            {
+                title: 'This is a reference paper3',
+                link: 'https://www.youtube.com/playlist?list=PLqGkIjcOyrGm_CBJR_4XVCr80v_yCNJ0Q'
+            }
 
         ]
     },
@@ -306,7 +310,12 @@ let table_of_contents = [
                 subtopics: []
             }
         ],
-        reference: []
+        reference: [
+            {
+                title: 'This is a reference paper3',
+                link: 'https://www.youtube.com/playlist?list=PLqGkIjcOyrGlvYCF1DAFcYoKYsF9FtTP9'
+            }
+        ]
     },
     {
         name: "Link Prediction",
@@ -378,7 +387,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: 'This is my link'
+                link: 'https://www.youtube.com/playlist?list=PLqGkIjcOyrGnJAlq4CzSPMqP02Eft32bh'
             }
         ]
     },
@@ -442,7 +451,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: 'This is my link'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
@@ -487,7 +496,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: 'This is my link'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
@@ -535,7 +544,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: 'This is my link'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
@@ -581,7 +590,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: 'This is my link'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },

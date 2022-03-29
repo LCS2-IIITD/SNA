@@ -451,7 +451,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: '-'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
@@ -496,7 +496,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: '-'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
@@ -544,7 +544,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: '-'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
@@ -590,7 +590,7 @@ let table_of_contents = [
         reference: [
             {
                 title: 'This is a reference paper3',
-                link: '-'
+                link: 'https://social-network-analysis.in/'
             }
         ]
     },
