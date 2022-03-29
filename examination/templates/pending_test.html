@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid m-2">
+        <h2 class="text-dark my-4">Pending Tests</h2>
+        {% if not pending_tests.count %}
+            No pending tests as of now. Keep up the grind.
+        {% else %}
+            {% for test in pending_tests %}
+                <div class="fluid-container p-3 border rounded shadow bg-info text-white card">
+                    <div class="row m-0 p-0">
+                        <div class="col-12 col-md-4">Test Name<h3>{{ test.test_name }}</h3></div>
+                        <div class="col-12 col-md-4">Test Code<h3>{{ test.test_code }}</h3></div>
+                        <div class="col-12 col-md-4">
+                            Number of questions
+                            <h3>{{ test.num_questions }}</h3>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            Duration of test
+                            <h3>{{ test.duration }} minutes</h3>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <form action="/confirmtest/" method="POST">
+                                {% csrf_token %}
+                                <input type="text" value="{{test.id}}" name="test_id" hidden>
+                                <button type="submit" class="btn btn-light float-right">Give test</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+        
+    </div>
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; LCS2 2021</span>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "registration/landing.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Header -->
+    <header class="ex-header bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Social Network Analysis Classes</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    
+                    <h4 class="mb-3">Ongoing Classes</h2>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            1. <div class="media-body"> Social Network Analysis Class at IIIT Delhi by Dr. Tanmoy Chakraborty.<br><a href="{% url 'sna_winter_22' %}">Click here</a> to check class recordings and details.</div>
+                        </li>
+                    </ul>
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    
+      <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Send us your queries at  <br> <a class="purple" href="book.socialnetworkanalysis@gmail.com">book.socialnetworkanalysis@gmail.com</a></h4>
+                    <div class="social-container">
+                        <!-- <span class="fa-stack">
+                            <a href="https://scholar.google.co.in/citations?user=C5S9JnIAAAAJ&hl=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/tanmoy_chak?lang=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/tanmoy-chakraborty-89553324/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+{% endblock %}

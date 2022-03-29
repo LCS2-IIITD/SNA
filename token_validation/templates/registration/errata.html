@@ -1,0 +1,91 @@
+{% extends "registration/landing.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Header -->
+    <header class="ex-header bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Errata</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mt-5 mb-5">
+                        <p class="p-large">This page shows the error corrections in the Social Network Analysis book.</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+<div class="container">
+   <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Pg. No.</th>
+      <th scope="col">Printed Text</th>
+      <th scope="col">Updated Text</th>
+      <th scope="col">Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Preface (xi)</th>
+      
+      <td>quantity</td>
+      <td>quantify</td>
+      <td>The "quantity" keyword in last second line of first paragraph should be "quantify".</td>
+    </tr>
+
+    <!-- paste <tr>  here again-->
+  </tbody>
+</table>
+</div>
+
+
+      <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Send us your queries at  <br> <a class="purple" href="book.socialnetworkanalysis@gmail.com">book.socialnetworkanalysis@gmail.com</a></h4>
+                    <div class="social-container">
+                        <!-- <span class="fa-stack">
+                            <a href="https://scholar.google.co.in/citations?user=C5S9JnIAAAAJ&hl=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/tanmoy_chak?lang=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/tanmoy-chakraborty-89553324/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+{% endblock %}

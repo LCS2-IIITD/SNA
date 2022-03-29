@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Social Network Analysis - A book by Dr. Tanmoy Chakraborty">
+    <meta name="author" content="Tanmoy Chakraborty">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="Social Network Analysis" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content="Social Network Analysis"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://www.social-network-analysis.in" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <!-- Webpage Title -->
+    <title>Social Network Analysis</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link href="css/fontawesome-all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0/swiper-bundle.css" integrity="sha512-KSNZIlzTiiGDbqWU1sMUlHGrmGKMMQpFKLXgnAVzo1A/27zIMXeRUdrMAGeosglC3uiOMNRikOnuclOs7AWXjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="{% static 'css/styles.css' %}" type="text/css" rel="stylesheet" />
+    <!-- <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script> -->
+	<!-- Favicon  -->
+    <style>
+        div[aria-expanded="true"]::after{
+                position: absolute;
+                content: "▴";
+                text-align: right;
+                right: 5px;
+            }
+
+            div[aria-expanded="false"]::after{
+                position: absolute;
+                content: "▾";
+                text-align: right;
+                right: 5px;
+            }
+
+            .collapsible {
+                position: relative;
+                background-color: #fafafa;
+            }
+
+            .collapsible:hover {
+                background-color: #17a2b8;
+                color: #fff;
+            }
+
+            .ref-icon:hover {
+                border: 1px rgba(247, 45, 45, 0.6) solid;
+            }
+    </style>
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    {% block navbar %}
+        {% include 'registration/navbar_2.html' %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li>Social Network Analysis</li>
+                    </ul>
+                </div> 
+                <div class="col-lg-6">
+                    <p class="p-small statement"> Tanmoy Chakraborty</p>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <!-- end of copyright -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0/swiper-bundle.min.js" integrity="sha512-wTn8Dp2gsPs3sl0vLmEYR6e9pwHOAuYWGjrCPM8xoppOfw0J/bs50+p/aLZ9PJRhsL2Ln/SZSL59i/z174iAPA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Swiper for image and text sliders -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script>
+                /* Description: Custom JS file */
+            /* Description: Custom JS file */
+
+
+        (function($) {
+            "use strict"; 
+            
+            /* Navbar Scripts */
+            // jQuery to collapse the navbar on scroll
+            $(window).on('scroll load', function() {
+                if ($(".navbar").offset().top > 60) {
+                    $(".fixed-top").addClass("top-nav-collapse");
+                } else {
+                    $(".fixed-top").removeClass("top-nav-collapse");
+                }
+            });
+            
+            // jQuery for page scrolling feature - requires jQuery Easing plugin
+            $(function() {
+                $(document).on('click', 'a.page-scroll', function(event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 600, 'easeInOutExpo');
+                    event.preventDefault();
+                });
+            });
+
+            // offcanvas script from Bootstrap + added element to close menu on click in small viewport
+            $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
+                $('.offcanvas-collapse').toggleClass('open')
+            })
+
+            // hover in desktop mode
+            function toggleDropdown (e) {
+                const _d = $(e.target).closest('.dropdown'),
+                    _m = $('.dropdown-menu', _d);
+                setTimeout(function(){
+                    const shouldOpen = e.type !== 'click' && _d.is(':hover');
+                    _m.toggleClass('show', shouldOpen);
+                    _d.toggleClass('show', shouldOpen);
+                    $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
+                }, e.type === 'mouseleave' ? 300 : 0);
+            }
+            $('body')
+            .on('mouseenter mouseleave','.dropdown',toggleDropdown)
+            .on('click', '.dropdown-menu a', toggleDropdown);
+
+
+            /* Details Lightbox - Magnific Popup */
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: true,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+            
+
+            /* Card Slider - Swiper */
+            var cardSlider = new Swiper('.card-slider', {
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                slidesPerView: 3,
+                spaceBetween: 70,
+                breakpoints: {
+                    // when window is <= 767px
+                    767: {
+                        slidesPerView: 1
+                    },
+                    // when window is <= 991px
+                    991: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    }
+                }
+            });
+
+
+            /* Counter - CountTo */
+            var a = 0;
+            $(window).scroll(function() {
+                if ($('#counter').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors	
+                    var oTop = $('#counter').offset().top - window.innerHeight;
+                    if (a == 0 && $(window).scrollTop() > oTop) {
+                    $('.counter-value').each(function() {
+                        var $this = $(this),
+                        countTo = $this.attr('data-count');
+                        $({
+                        countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                        },
+                        {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function() {
+                            $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                            }
+                        });
+                    });
+                    a = 1;
+                    }
+                }
+            });
+
+
+            /* Move Form Fields Label When User Types */
+            // for input and textarea fields
+            $("input, textarea").keyup(function(){
+                if ($(this).val() != '') {
+                    $(this).addClass('notEmpty');
+                } else {
+                    $(this).removeClass('notEmpty');
+                }
+            });
+            
+
+            /* Back To Top Button */
+            // create the back to top button
+            $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
+            var amountScrolled = 700;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > amountScrolled) {
+                    $('a.back-to-top').fadeIn('500');
+                } else {
+                    $('a.back-to-top').fadeOut('500');
+                }
+            });
+
+
+            /* Removes Long Focus On Buttons */
+            $(".button, a, button").mouseup(function() {
+                $(this).blur();
+            });
+
+        })(jQuery);
+    </script>
+    <script> 
+
+      function counter_fn(){
+            var counterElement = document.getElementById("cntr")
+            
+            if (localStorage.getItem("count")) {
+              var counterNumber = parseInt(localStorage.getItem("count"))
+            }
+            else {
+            var counterNumber = 1
+       
+            localStorage.setItem("count", counterNumber)
+            }
+
+            // var counterNumber = parseInt(counterElement.innerHTML)
+            // localStorage.getItem("count") = parseInt(localStorage.getItem("count")) + 1
+            counterNumber = counterNumber + 1
+            // localStorage.setItem("count", counterNumber)
+            // document.getElementById("cntr").innerHTML = localStorage.getItem("count")
+            console.log(counterNumber)
+      }
+      window.onload = counter_fn;  
+    </script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

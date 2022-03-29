@@ -1,0 +1,93 @@
+{% extends "registration/landing.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- Header -->
+    <header class="ex-header bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Testimonials</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            
+            <!-- new row starts here for each testimonial -->
+            <div class="row" style="padding-bottom: 40px;">
+                <div class="col-md-3" style="padding-top: 30px;">
+                    <img style="width:200px; height: 200px;" src="https://pbs.twimg.com/profile_images/1685688919/Jure-6a.jpg" class="rounded-circle">
+                </div>
+
+                <div class="col-md-9">
+                    <h5>Jure Leskovec<span class="p-small">, Professor, Stanford University, USA</span></h5>
+                    
+                    <p class="mb-5" style="text-align: justify; text-justify: inter-word">
+                    If you care are about social networks and seek to better understand their algorithmic underpinnings, then put this book on your reading list. The book provides a balance of mathematical foundations and technologeal aspects of social networks. You will learn about important algorithms for analyzing social networks and how they apply to online platforms like YouTube, Instagram, Twitter, Facebook and Pinterest. Tanmoy has done an incredible job in putting together fundamental concepts in social network analysis in an extensive yet lunid manner which is easily accessible to the readers. In addition the exercises, additional materials and a comprehensive bibliography enhance the quality of the book. In each chapter, examples and illustrations of concepts make them easy to understand. In short, I thoroughly enjoyed the book and highly recommend it as a textbook for social network analysis or related courses such as netwerk science, complex networks, mining social media, at the senior undergraduate and graduate levels.
+                </p>
+
+                </div>
+
+            </div> <!-- end of row -->
+            
+
+            <!-- new row starts -->
+            <div class="row" style="padding-bottom: 40px;">
+                <div class="col-md-3" style="padding-top: 30px;">
+                    <img style="width:200px; height: 200px;" src="https://pbs.twimg.com/profile_images/1037181832180064256/cyGI7SC6.jpg" class="rounded-circle">
+                </div>
+
+                <div class="col-md-9">
+                    <h5>Manish Gupta<span class="p-small">, Director, Google Research, India</span></h5>
+                    
+                    <p class="mb-5" style="text-align: justify; text-justify: inter-word">
+                        While social networks are not a new phenomenon, the need to study them deeply is clear from the huge impact of online social networks on the world around us. Tanmoy Chakraborty has done the commmmity a great service by creating a really comprehensive textbook on social network analysis, which can be the basis of a dedicated course for both undergraduate and graduate students. The book covers the traditional methods as well as recent advances in the field, including graph representation learning. The concepts in each chapter are presented in a clear and accessible manner, with lots of examples, pictures and explanations of the underlying intuition, to enable the reader to grasp these concepts even if they lack insignificant prior background. The book presents a nice mix of theory, applications and case studies, making it useful also for industry practitioners, not just for students and researchers. Each chapter includes a comprehensive set of exercises, project ideas, and publicly available tools and datasets. I highly recommend this book and compliment the author for creating such a wonderful resource for an important field.
+                    </p>
+
+                </div>
+
+            </div> <!-- end of row -->
+
+            
+            <!-- add new row image+text here -->
+
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Send us your queries at  <br> <a class="purple" href="book.socialnetworkanalysis@gmail.com">book.socialnetworkanalysis@gmail.com</a></h4>
+                    <div class="social-container">
+                        <!-- <span class="fa-stack">
+                            <a href="https://scholar.google.co.in/citations?user=C5S9JnIAAAAJ&hl=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/tanmoy_chak?lang=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/tanmoy-chakraborty-89553324/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+{% endblock %}

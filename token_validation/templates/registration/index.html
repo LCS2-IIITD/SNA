@@ -1,0 +1,638 @@
+{% extends "registration/landing.html" %}
+{% load static %}
+{% block navbar %}
+    {% include 'registration/navbar_1.html' %}
+{% endblock %}
+{% block content %}
+<!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <!-- <h1 class="h1-large">Social Network & Analysis</h1> -->
+                        <p class="p-0" style="text-align: justify; text-justify: inter-word">
+                        Social Network Analysis (SNA) is an interdisciplinary area, located at the intersection of statistical machines, graph theory, social science (SS) and the recent advancements in computer science (CS) and information technology (IT). Recently, the accessibility to the enormous amount of data has given a significant impetus to exploring SNA as an academic field. This book covers the contents, keeping in mind the CS, IT and SS academic curriculum for undergraduate and fresh graduate students. The coverage of the book has the right balance of the mathematical foundations and technological aspects of social networks, along with several applications of mining social network data. This book perhaps is the first of its kind that succinctly covers a set of critical fundamental concepts (theory) and offers detailed coverage of recent advances (practice). Moreover, additional online material (source codes, datasets, blogs, exercises, etc.) accompanying the chapters along with quizzes and data challenges would strengthen the theoretical and practical skills of the students and professionals.</p>
+                        <hr>
+                        <p class="p-small">Author <br>
+                            <b><a href="https://faculty.iiitd.ac.in/~tanmoy/"> Tanmoy Chakraborty</a></b>, Assistant Professor, IIIT Delhi
+                        </p>
+                        <p class="p-small">
+                            Endorsed by <br>
+                            <b><a href="https://cs.stanford.edu/people/jure/">Jure Leskovec</a></b>, Professor, Stanford University <br> 
+                            <b><a href="https://research.google/people/106704/">Manish Gupta</a></b>, Director, Google Research, India
+                        </p>
+                        <p class="p-small">     
+                            Foreword by <br>
+                            <b><a href="https://www.cse.iitb.ac.in/~soumen/">Soumen Chakrabarti</a></b>, Professor, IIT Bombay, India
+                        </p>
+                        
+                        <a class="btn-solid-lg" href="https://www.amazon.in/Social-Network-Analysis-Tanmoy-Chakraborty/dp/9354247830/ref=sr_1_2?dchild=1&keywords=9789354247835&qid=1634206218&sr=8-2"><i class="fab fa-amazon"></i>Buy at Amazon</a>
+                        <a class="btn-solid-lg secondary" href="https://www.amazon.in/Social-Network-Analysis-Tanmoy-Chakraborty-ebook/dp/B09HS2QTF4/ref=sr_1_1?dchild=1&keywords=9789354247835&qid=1633915392&sr=8-1"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Buy on Kindle</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="https://i.imgur.com/Tjx8Amp.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+    <!-- Introduction -->
+    <!-- <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Team management mobile apps don’t get better than Pavo. It’s probably the best app in the world for this purpose. Don’t hesitate to give it a try today and you will fall in love with it</p>
+                </div>
+            </div> 
+        </div> 
+    </div> 
+     -->
+
+
+    <!-- Details Lightbox -->
+    <!-- Lightbox -->
+    <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <!-- <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
+                </div> 
+            </div>  -->
+            <div class="col-lg-12">
+                <img src="https://i.ibb.co/TPjptjK/Screenshot-2021-09-05-at-1-59-21-PM.png" style=" width: 1000px; text-align: center;">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightbox -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1">
+        <div class="container">
+                    
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-5">
+                                    <h3>Bibliographic Information</h3>
+                                    <div class="text-box mb-5">                    
+                                    
+                                    <div class="media-body"> 
+                                        <code>@book{ <br>
+                                            &nbsp  SNA_Tanmoy_book,<br>
+                                            &nbsp  author    = {Chakraborty T},<br>
+                                            &nbsp  title     = {Social Network Analysis},<br>
+                                            &nbsp  publisher = {Wiley India Pvt. Ltd.},<br>
+                                            &nbsp  year      = {2021},<br>
+                                            &nbsp  isbn      = {978-81-265-2007-7}<br>
+                                          }
+                                      </code>
+
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <h3>With this book you get</h3>
+                                  <div class="text-box mb-5">                    
+                                  <div class="media-body"> 
+                                        <ul>
+                                            <li>Three Online Examinations (Successful candidates will receive e-certificates)</li>
+                                            <li>Participation in challenging Online Hackathon</li>
+                                            <li>Comprehensive Additional Reading Materials, Slides, Video Lectures</li>
+                                            <hr>
+                                            <span class="mb-5">Follow the Twitter handle (<a href="https://twitter.com/tanmoy_chak?lang=en">@Tanmoy_Chak</a>) of the author and subscribe to our website for frequent updates.</span><br>
+                                            <a class="popup-with-move-anim" href="#details-lightbox">Know how to Get Access</a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+                    
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+    <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WqoomVoCmvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Details 2 -->
+    <div id="toc" class="basic-3">
+        <div class="container">
+            <h3> Table of Contents</h3>
+            <br>
+            <div id="table_of_contents">
+            </div>
+            <!-- <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Introduction
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            What is Social Network Analysis (SNA)?
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Why do We Study Social Network Analysis?
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Applications of Social Network Analysis
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Preliminaries
+                        </div>
+                    </li>
+                    
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Three Levels of Social Network Analysis
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Historical Development
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Graph Visualization Tools
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Summary of the Chapter
+                        </div>
+                    </li>
+                </ul>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- second card -->
+
+              <!-- <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Network Measures
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Network Basics
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Node Centrality
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Assortativity
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Transitivity and Reciprocity
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Similarity
+                        </div>
+                    </li>
+
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Degeneracy
+                        </div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-chevron-right"></i>
+                        <div class="media-body">
+                            Summary of the Chapter
+                        </div>
+                    </li>
+                </ul>
+                  </div>
+                </div>
+              </div> -->
+
+
+            <!-- 3rd card -->
+
+              <!-- <div class="card">
+                <div class="card-header" id="heading3">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                      Network Growth Models
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled li-space-lg">
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+
+            <!-- 4th card -->
+
+              <!-- <div class="card">
+                <div class="card-header" id="heading4">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                        Link Analysis
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled li-space-lg">
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+
+            <!-- 5th card -->
+              <!-- <div class="card">
+                <div class="card-header" id="heading5">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                      Community Structure in Networks
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse5" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled li-space-lg">
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+
+            <!-- 6th card -->
+              <!-- <div class="card">
+                <div class="card-header" id="heading6">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                      Link Prediction
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse6" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-unstyled li-space-lg">
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    <li class="media"><i class="fas fa-chevron-right"></i><div class="media-body">Network Basics</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+            <!--  new card comes here -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+
+    <!-- Testimonials -->
+    <div id= "testimonials" class="slider-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">What do readers think?</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <!-- <div class="swiper-slide"> -->
+                                    <div class="card">
+                                        <img class="card-image" src="https://cs.stanford.edu/people/jure/images/jure-2b.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">If you care about social networks and seek to better understand their algorithmic underpinnings, then put this book on your reading list ...</p>
+                                            <p class="testimonial-author">Jure Leskovec</p><p>Professor, Stanford University</p>
+                                        </div>
+                                    </div>
+                                <!-- </div> --> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <!-- <div class="swiper-slide"> -->
+                                    <div class="card">
+                                        <img class="card-image" src="https://pbs.twimg.com/profile_images/1037181832180064256/cyGI7SC6.jpg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">... Tanmoy Chakraborty has done the community a great service by creating a really comprehensive textbook on social network analysis, which can be the basis of a dedicated course ...</p>
+                                            <p class="testimonial-author">Manish Gupta</p><p>Director, Google Research, India</p>
+                                        </div>
+                                    </div>        
+                                <!-- </div> --> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                        
+                        
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <h2 class="h2-heading">What do readers think?</h2> -->
+                    <!-- <a class="h2-heading" href="article.html">Get in Touch</a> -->
+                </div> <!-- end of col -->                
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="image-container" style="padding-top: 40px">
+                        <img class="img-fluid authorpic" 
+                        src="https://faculty.iiitd.ac.in/~tanmoy/img/tan_chak.png" 
+                        alt="alternative">
+                    </div> 
+                </div> <!-- end of col -->
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <!-- <h2>Author & Affiliation</h2> -->
+                        <p style="text-align: justify; text-justify: inter-word"><a href ="http://faculty.iiitd.ac.in/~tanmoy/">Tanmoy Chakraborty</a> is an Assistant Professor and a Ramanujan Fellow at the Dept. of CSE., IIIT Delhi, India. Prior to this, he was a postdoctoral researcher at the University of Maryland, College Park, USA. He completed his PhD in 2015 as a Google PhD scholar at IIT Kharagpur, India. His research group, <a href="http://lcs2.iiitd.edu.in/">LCS2</a>, broadly works in the areas of Social Network Analysis and Natural Language Processing with a major focus on designing data-driven solutions for cyber informatics.
+                        He is a recipient of several prestigious awards including Faculty awards/fellowships from Google, IBM, Accenture and LinkedIn. He is also involved in mentoring several tech startups. He has recently co-authored a book on <a href="https://www.springer.com/gp/book/9783030626952">"Data Science for Fake News Detection: Surveys and Perspectives"</a>. He has been appointed as a project director of the "Technology Innovation Hub", a massive initiative taken by the Govt of India. </p>
+                        <a class="btn-solid-reg" href="http://faculty.iiitd.ac.in/~tanmoy/">More</a>
+                        <!-- <a class="btn-outline-reg" href="article.html">Get in Touch</a> -->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="container">
+
+            <section class="newsletter">
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
+                                <div class="content">
+                                    <form action="{% url 'subscribe' %}" method="POST" id="SubscribeForm">
+                                        {% csrf_token %}
+                                        <div class="input-group">
+                                            <input type="email" name='email' class="form-control" placeholder="Enter your email">
+                                            <span class="input-group-btn">
+                                                <button class="btn" type="submit" id='subscribeFormBtn'>Subscribe Now</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-sm-2"></div>    
+                        </div>
+                </section>        
+
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of details 2 -->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Send us your queries at  <br> <a class="purple" href="book.socialnetworkanalysis@gmail.com">book.socialnetworkanalysis@gmail.com</a></h4>
+                    <div class="social-container">
+                        <!-- <span class="fa-stack">
+                            <a href="https://scholar.google.co.in/citations?user=C5S9JnIAAAAJ&hl=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google fa-stack-1x"></i>
+                            </a>
+                        </span> -->
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/tanmoy_chak?lang=en">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/tanmoy-chakraborty-89553324/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <div class="modal fade" id="referenceModal" tabindex="-1" role="dialog" aria-labelledby="referenceModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Coming soon</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="reference-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/table_of_content.js' %}"></script>
+    <script>
+        function createTableOfContentsAccordianMain() {
+            let toc_holder = document.getElementById("table_of_contents")
+            for (let i = 0; i < table_of_contents.length; i++) {
+                let chapter_id = i+1
+                let topic_div = document.createElement('div')
+                topic_div.id = `toc_${chapter_id}`
+                topic_div.classList.add("col-12", "m-0", "p-0")
+                console.log("YO LINK HAI",table_of_contents[i]['reference'][0]['link'])
+                let linki = table_of_contents[i]['reference'][0]['link']
+                let topic_button = addCollapseButton(chapter_id, "main", table_of_contents[i]["name"], `${chapter_id}`, linki, true)
+                topic_div.appendChild(topic_button)
+                topic_div.appendChild(createTableOfContentsAccordianTopic(table_of_contents[i]['topics'], `toc_${chapter_id}_main`, chapter_id))
+                toc_holder.appendChild(topic_div)
+            }
+
+        }
+
+        function refClick(chapter) {
+            // alert('here')
+            let chapIndex = chapter
+            $('#referenceModal').modal();
+            
+        }
+
+        function addCollapseButton(id, prefix, text, pointer, link, parent=false) {
+            // let topic_holder = document.createElement('div')
+            let topic_button = document.createElement("div")
+            topic_button.classList.add("btn", "btn-block", "text-left", "p-2", "collapsible", 'd-flex')
+            topic_button.setAttribute("type", "button")
+            topic_button.setAttribute("data-toggle", "collapse")
+            topic_button.setAttribute("data-target", `#toc_${id}_${prefix}`)
+            topic_button.setAttribute("aria-expanded", "false")
+            topic_button.setAttribute("aria-controls", `toc_${id}_${prefix}`)
+            topic_button.innerHTML = `<div class="flex-grow-1">${pointer}. ${text}</div>`
+            if (parent) {
+                // console.log();
+                topic_button.innerHTML += `<a class="fas fa-file ref-icon ml-auto mr-4" href="${link}"; "></a>`
+
+                // topic_button.innerHTML += `<i class="fas fa-file ref-icon ml-auto mr-4" onclick="refClick(${pointer}); "></i>`
+            }
+            topic_button.innerHTML += `<span class='coll-indic'></span>`
+            return topic_button
+        }
+
+        function createTableOfContentsAccordianTopic(data, id, chapter) {
+            let topic_holder = document.createElement('div')
+            topic_holder.classList.add("collapse", "col-12", "m-0", "p-2", "border")
+            topic_holder.setAttribute("aria-labelledby", `toc_${chapter}`)
+            topic_holder.setAttribute("data-parent","#table_of_contents")
+            topic_holder.addEventListener("click", function(e) {
+                if (this !== event.target) {
+                        // console.log("DAMN")
+                        return
+                    }
+            })
+            topic_holder.id = id
+            for (let i = 0; i < data.length; i++) {
+                let topic_id = `${chapter}_${i+1}`
+                let topic_div = document.createElement('div')
+                topic_div.id = `toc_${topic_id}`
+                topic_div.classList.add("col-12", "m-0", "p-0")
+                // console.log(data[i]["name"]);
+                // console.log("========")
+                let topic_button = addCollapseButton(topic_id, "sub", data[i]["name"], `${chapter}.${i+1}`, "link")
+                topic_button.addEventListener("click", function(e) {
+                    if (this !== event.target) {
+                        console.log("DAMN")
+                        return
+                    }
+                })
+                topic_div.appendChild(topic_button)
+                let subtopic_holder = document.createElement('div')
+                subtopic_holder.classList.add("col-12", "m-0", "p-2", "border")
+                subtopic_holder.setAttribute("aria-labelledby", `toc_${topic_id}_sub`)
+                subtopic_holder.setAttribute("data-parent",`#toc_${chapter}_main`)
+                subtopic_holder.id = `toc_${topic_id}_sub`
+                for (let j = 0; j < data[i]['subtopics'].length; j++) {
+                    subtopic_holder.innerHTML += `<p class="m-1 p-1">${chapter}.${i+1}.${j+1} ${data[i]["subtopics"][j]}</p>`
+                }
+                if (data[i]['subtopics'].length != 0) {
+                    topic_div.appendChild(subtopic_holder)
+                    subtopic_holder.classList.add("collapse")
+                } else {
+                    topic_button.removeAttribute('aria-expanded')
+                }
+                topic_holder.appendChild(topic_div)
+            }
+            return topic_holder
+        }
+        createTableOfContentsAccordianMain()
+
+        $('#SubscribeForm').submit(function () {
+                // create an AJAX call
+                $.ajax({
+                    data: $(this).serialize(), // get the form data
+                    type: $(this).attr('method'), // GET or POST
+                    url: "{% url 'subscribe' %}",
+                    // on success
+                    success: function (response) {
+                        alert("Thankyou for reaching out to us. " + response.msg);
+                    },
+                    // on error
+                    error: function (response) {
+                        // alert the error if any error occured
+                        alert(response.responseJSON.msg);
+                        console.log(response.responseJSON.msg)
+                    }
+                });
+                return false;
+            });
+    </script>
+{% endblock %}
